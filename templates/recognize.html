@@ -9,6 +9,13 @@
 </head>
 <body>
     <h1>Recognize an image</h1>
+    <video id="video" width="640" height="480" autoplay></video>
+    <br>
+    <label for="imageName">Image Name:</label>
+    <input type="text" id="imageName" name="imageName">
+    <button id="start">Start Capture Sequence</button>
+    <button id="reg">Register</button>
+    <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
     <button id="attendance">Attendance</button>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
     <div id="face-guide" style="display: none;"></div>

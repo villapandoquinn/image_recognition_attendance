@@ -89,7 +89,7 @@ def saveRegistered():
     # return render_template('recognize.html', image_name=image_name)
 
     if request.method == 'POST':
-        # training_models.training_models()
+        training_models.training_models()
         return jsonify({'success': True})
     else:
         jsonify({'Error': 'Error'})
