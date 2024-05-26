@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Capture</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Camera Capture</h1>
+    <video id="video" width="640" height="480" autoplay></video>
+    <br>
+    <label for="imageName">Image Name:</label>
+    <input type="text" id="imageName" name="imageName">
+    <button id="start">Start Capture Sequence</button>
+    <button id="reg">Register</button>
+    <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+    <div id="instructions"></div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <div id="face-guide" style="display: none;"></div>
+
+
+    
+</body>
+</html>
